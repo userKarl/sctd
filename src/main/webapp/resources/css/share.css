@@ -1,0 +1,72 @@
+body{
+		margin: 0;
+        padding: 0;
+		font-family:Microsoft YaHei,Î¢ÈíÑÅºÚ;
+	}
+
+	.top{
+		width:100%;
+		height: 9em;
+		background-color:#E8F2FE; 
+		text-align:center;
+	}	
+	.member-pic{width:100%;height:1px;margin-top: 0.625em;float:left;}
+    /*.member-pic{background-size:4.0625em 4.0625em;width:4.0625em;height:4.0625em;position:absolute;left:39%;top:1.625em;border:0.125em solid #B7B5B4;border-radius:6.25em; -webkitborder-radius:6.25em;cursor:pointer;}*/
+    .member-pic .member-edit{visibility:visible;width:3.125em;height:3.125em;margin:0 auto;margin-top:0.625em;z-index:0.3125em;position:absolute;left:0.5em;} 
+    .member-pic .member-edit img{width:1.25em;height:1.25em;margin-left:10.3125em;}
+    .member-pic .member-edit span{display:block;font-size:0.75em;color:#FFF;}
+    .member-shade{margin:0 auto;background:url() 0 0 no-repeat;width:4.0625em;height:4.0625em;background-color:#466A54;border-radius:6.25em; -webkitborder-radius:6.25em;-webkit-opacity: 1;  -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; filter:alpha(opacity=100);}
+    .group-name{width:100%;height:1.875em;float:left;margin-top: 4.2em;text-align:center;}
+    .group-info{color:orange;width:100%;height:1.875em;float:left;margin-top: 0em;text-align:center;}    
+    .group-info span+span{font-size:0.8em;margin-left: 1.8em;}
+    .group-info span:nth-child(1){font-size:0.8em;}
+    .container{width:100%;height:auto;margin-top: -0.5em;} 
+    .split{height:1.2px;width:100%;background:#B2B2B2;overflow:hidden;}
+    .add{margin-top: 0.5em;}
+    .footer{width: 100%;height: auto;}
+    .footer-top{width: 100%;height: 2em;background-color: #F4F4F4;vertical-align:center;line-height:2em;}
+    .footer-top span{display: inline-block;margin-left: 1.1em;letter-spacing:0.0625em;}
+    .footer-main{text-indent: 2em;line-height:1.8em;width:90%;margin:0 auto;font-size: 0.95em;}
+    .download{width: 100%;height: 4em;background-color: #5FAEFE;left: 0;}
+    .app-icon{margin-left:0.6em;background:url(/sctd/resources/images/icon87.png) -0.79em -0.8em repeat;width:3.84em;height:3.85em;background-color:#5FAEFE;border-radius:6.25em; -webkitborder-radius:6.25em;-webkit-opacity: 1;  -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; filter:alpha(opacity=100);}
+    .download { position: fixed;  bottom: 0; z-index: 100; }
+    .app-icon {position: fixed;  bottom: 0.8em; z-index: 100;}
+    .dbutton { position: fixed;  bottom: 0.8em; z-index: 100; }
+    .download .detail{color:#FFF;width:75%;margin-top: -0.8em;}
+    .download .detail span{font-family: »ªÎÄ¿¬Ìå;}
+    .download .detail .name{font-weight: bold;font-size: 1.2em;margin-left: 4.5em;margin-top: -1em;}
+    .download .detail .intro{font-size: 0.85em;margin-left: 6.5em;margin-top: -1.2em;}
+    .dbutton{width: 4.5em;height: 2.3em;vertical-align: center;line-height: 2.3em;background-color: #FEC000;right: 0.6em;border-radius:6.25em; -webkitborder-radius:6.25em;text-align: center;}
+    .dbutton span{font-size: 0.9em;color: #FFF;}
+	.addplace{width: :100%;height: 5em;}
+    table.gridtable {
+	   	width:100%;	
+		font-size:1em;
+		color:#333333;
+		border-width: 1px;
+		border-color: #B2B2B2;
+		border-collapse: collapse;
+		}
+	table.gridtable th {	
+		padding: 8px;	
+		background-color: #F4F4F4;
+	}
+	table.gridtable td {
+		width:165px;
+		text-align: center;
+		border-top: 1px solid #B2B2B2;
+		padding: 1px;	
+		line-height: 13px;		
+	}
+	.level{width:5.5em;height:1.1em;  left:13.625em;top: 4em; background:red; position: relative;border-radius: 0.3em;}
+	.level span{ font-size:0.65em;color: #FFF;position: relative;top:-1.3em; }
+	#triangle-down {   
+	    width: 0;   
+	    height: 0;   
+	    border-left: 0.25em solid transparent;   
+	    border-right: 0.25em solid transparent;   
+	    border-top: 0.5em solid red;   
+		position: relative;
+		top:-1.05em;
+		left: 0.5em;
+	} 

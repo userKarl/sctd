@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+	<property name="WEB_NAME" value="sc" />
+	<property name="LOG_HOME" value="${catalina.home}/logs/${WEB_NAME}" />
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${LOG_HOME}/now.log</File>
+		<Prudent>true</Prudent>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<MaxHistory>90</MaxHistory>
+			<FileNamePattern>${LOG_HOME}/%d{yyyy-MM-dd}.log</FileNamePattern>
+		</rollingPolicy>
+		<encoder charset="UTF-8">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%thread] ${WEB_NAME} %-5level %logger{36} - %msg%n</pattern>
+		</encoder>		
+	</appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%thread] ${WEB_NAME} %-5level %logger{36} - %msg%n</pattern>
+		</encoder>		
+	</appender>
+
+	<logger name="com.sc.td" level="ERROR" />
+	
+	<root level="ERROR">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+	
+</configuration>
